@@ -3,7 +3,7 @@ package DDD;
 # DATE
 # VERSION
 
-use Data::Dump qw(dd);
+use Data::Dump;
 
 sub import {
     my $class = shift;
@@ -27,7 +27,8 @@ L<DDD> is basically just a shortcut for:
 except that it's shorter and you don't have to import anything.
 
 It aids in print-based debugging session. You don't have to add a separate
-C<use> statement.
+C<use> statement. The drawback is that it's executed in compile-time phase and
+thus are useless in a lot of cases.
 
 
 =head1 SEE ALSO
