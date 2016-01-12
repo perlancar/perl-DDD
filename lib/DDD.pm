@@ -18,7 +18,7 @@ sub import {
  use DDD $your_data, $another, ...;
 
 
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 L<DDD> is basically just a shortcut for:
 
